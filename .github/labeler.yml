@@ -1,0 +1,2 @@
+schema-change:
+  - "packages/graphql/schema/**/*.graphql"

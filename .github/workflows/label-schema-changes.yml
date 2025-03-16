@@ -1,0 +1,14 @@
+name: "Add label for GraphQL schema changes"
+
+on:
+  pull_request:
+
+jobs:
+  label:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Apply labels
+        uses: actions/labeler@v4
+        with:
+          repo-token: "${{ secrets.GITHUB_TOKEN }}"
