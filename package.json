@@ -1,0 +1,20 @@
+{
+  "name": "schema-driven-development-react-express-graphql",
+  "version": "1.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "packageManager": "npm@10.9.2",
+  "devDependencies": {
+    "turbo": "^2.4.4"
+  }
+}
