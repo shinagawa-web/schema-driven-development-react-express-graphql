@@ -2,6 +2,8 @@
 
 This project follows a **monorepo structure** using **Turborepo**, integrating a **GraphQL API backend** built with **Express.js and Apollo Server**, and a **React frontend** using **Vite**. The GraphQL schema is shared between the backend and frontend through a centralized `packages/graphql` directory.
 
+🔗 [Schema-Driven Development with React + Express + GraphQL](https://shinagawa-web.com/blogs/schema-driven-development-react-express-graphql)
+
 ---
 
 ## **Project Structure**
@@ -143,7 +145,6 @@ npm run start
 3. Make your changes and commit them.
 4. Push your branch and create a **Pull Request**.
 
----
 
 ## **License**
 This project is licensed under the **MIT License**.
