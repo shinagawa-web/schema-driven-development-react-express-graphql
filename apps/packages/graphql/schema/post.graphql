@@ -8,6 +8,7 @@ type Author {
 type Post {
   id: Int!
   title: String!
+  description: String
   author: Author
 }
  
