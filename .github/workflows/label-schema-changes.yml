@@ -3,6 +3,10 @@ name: "Add label for GraphQL schema changes"
 on:
   pull_request:
 
+permissions:
+  pull-requests: write  # ← PR にラベルを追加できるようにする
+  contents: read  # ← リポジトリの内容を読み取る
+
 jobs:
   label:
     runs-on: ubuntu-latest
