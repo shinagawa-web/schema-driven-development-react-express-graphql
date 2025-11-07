@@ -8,7 +8,8 @@ type Author {
 type Post {
   id: Int!
   title: String!
-  description: String
+  description: String @deprecated(reason: "Use 'excerpt' instead.")
+  excerpt: String
   author: Author
 }
  

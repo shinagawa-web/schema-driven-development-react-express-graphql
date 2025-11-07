@@ -2,6 +2,7 @@ query GetPosts {
   posts {
     id
     title
+    excerpt
     author {
       firstName
       lastName

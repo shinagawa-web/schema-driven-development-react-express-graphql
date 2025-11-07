@@ -28,6 +28,7 @@ function App() {
             <li key={post?.id}>
               <h2>{post?.title}</h2>
               <p>Author: {post?.author?.firstName} {post?.author?.lastName}</p>
+              <p>{post?.excerpt}</p>
             </li>
           ))}
         </ul>

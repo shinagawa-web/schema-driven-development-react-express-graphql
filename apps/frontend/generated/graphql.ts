@@ -33,6 +33,9 @@ export type AuthorPostsArgs = {
 export type Post = {
   __typename?: 'Post';
   author?: Maybe<Author>;
+  /** @deprecated Use 'excerpt' instead. */
+  description?: Maybe<Scalars['String']['output']>;
+  excerpt?: Maybe<Scalars['String']['output']>;
   id: Scalars['Int']['output'];
   title: Scalars['String']['output'];
 };
@@ -69,7 +72,7 @@ export type Recipe = {
 export type GetPostsQueryVariables = Exact<{ [key: string]: never; }>;
 
 
-export type GetPostsQuery = { __typename?: 'Query', posts?: Array<{ __typename?: 'Post', id: number, title: string, author?: { __typename?: 'Author', firstName: string, lastName: string } | null } | null> | null };
+export type GetPostsQuery = { __typename?: 'Query', posts?: Array<{ __typename?: 'Post', id: number, title: string, excerpt?: string | null, author?: { __typename?: 'Author', firstName: string, lastName: string } | null } | null> | null };
 
 
 export const GetPostsDocument = gql`
@@ -77,6 +80,7 @@ export const GetPostsDocument = gql`
   posts {
     id
     title
+    excerpt
     author {
       firstName
       lastName
