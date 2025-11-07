@@ -3,6 +3,10 @@ name: "Add label for GraphQL schema changes"
 on:
   pull_request:
 
+permissions:
+  pull-requests: write
+  contents: read
+
 jobs:
   label:
     runs-on: ubuntu-latest

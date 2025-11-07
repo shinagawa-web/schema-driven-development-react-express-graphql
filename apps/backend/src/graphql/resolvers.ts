@@ -5,9 +5,27 @@ const authors = [
 ];
 
 const posts = [
-  { id: 1, title: "GraphQL Introduction", authorId: 1 },
-  { id: 2, title: "Advanced GraphQL", authorId: 1 },
-  { id: 3, title: "GraphQL with Apollo", authorId: 2 },
+  { 
+    id: 1, 
+    title: "GraphQL Introduction", 
+    description: "A comprehensive introduction to GraphQL", 
+    excerpt: "Learn the basics of GraphQL and its core concepts",
+    authorId: 1 
+  },
+  { 
+    id: 2, 
+    title: "Advanced GraphQL", 
+    description: "Deep dive into advanced GraphQL features", 
+    excerpt: "Explore advanced GraphQL patterns and best practices",
+    authorId: 1 
+  },
+  { 
+    id: 3, 
+    title: "GraphQL with Apollo", 
+    description: "Using GraphQL with Apollo Client and Server", 
+    excerpt: "Build full-stack applications with GraphQL and Apollo",
+    authorId: 2 
+  },
 ];
 
 export const resolvers = {

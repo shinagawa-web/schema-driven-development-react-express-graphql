@@ -1,2 +1,2 @@
 schema-change:
-  - "packages/graphql/schema/**/*.graphql"
+  - "apps/packages/graphql/schema/**/*.graphql"
